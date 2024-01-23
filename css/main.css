@@ -1,0 +1,244 @@
+/* CSS STYLE  */
+
+/* RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    ul {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+/*--------------   GLOBAL ---------------   */
+
+/* GOOGLE-FONT */
+
+
+
+
+
+
+/*
+ FONTS/FONT-SIZE
+*/
+
+a {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+    &:hover {
+        color: #d58936;
+        cursor: pointer;
+    }
+}
+
+h1 {
+    font-family: "PT Sans Narrow", serif;
+    font-size: 131px;
+}
+
+h2 {
+    font-family: "PT Sans Narrow", serif;
+    font-size: 51px;
+}
+
+p {
+    font-family: "PT Sans Narrow", serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*
+ BUTTONS STYLE
+*/
+
+// COLOR PALETTE - https://coolors.co/3c1518-69140e-a44200-d58936-fff94f
+/* 
+Black bean - #3C1518
+Blood Red - #69140E
+Brown - #A44200
+Bronze - #D58936
+Icterine - #FFF94F
+*/
+
+.primary-button {
+}
+
+.secondary-button {
+}
+
+/* NAVBAR STYLE */
+
+header {
+    background: rgb(250, 250, 250);
+    .navbar {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        .logo {
+            display: flex;
+        }
+
+        .nav-list {
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .nav-item {
+            }
+        }
+    }
+}
+
+/* 
+    HERO
+*/
+
+.hero-wrapper {
+    position: relative;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-content {
+        z-index: 1;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+
+        .hero-title {
+            color: rgb(250, 250, 250);
+        }
+
+        .hero-text {
+            font-weight: 400;
+            color: rgb(250, 250, 250);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*
+ MAIN STYLE
+*/
+
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    section {
+        min-height: 500px;
+        display: flex;
+        flex-direction: row;
+        //border: 1px solid red;
+        margin: 40px;
+    }
+
+    .top-section {
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                flex: 1;
+
+                p {
+                    margin: 50px;
+                }
+            }
+            .image-container {
+                flex: 1;
+            }
+        }
+
+        .title-wrapper {
+            background: #a44200;
+            padding: 2%;
+        }
+    }
+    .middle-section {
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                flex: 1;
+                p {
+                    margin: 50px;
+                }
+            }
+            .image-container {
+                flex: 1;
+            }
+        }
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+            background: #69140e;
+            padding: 2%;
+        }
+    }
+    .bottom-section {
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                flex: 1;
+
+                p {
+                    margin: 50px;
+                }
+            }
+            .image-container {
+                flex: 1;
+            }
+        }
+        .title-wrapper {
+            display: flex;
+            align-items: end;
+            background: #d58936;
+            padding: 2%;
+
+            h1 {
+            }
+        }
+    }
+}
+
+/* 
+ FOOTER STYLE
+*/
+
+footer {
+    height: 300px;
+    background: #3c1518;
+}
