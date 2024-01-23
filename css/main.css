@@ -24,11 +24,6 @@ body {
 
 /* GOOGLE-FONT */
 
-
-
-
-
-
 /*
  FONTS/FONT-SIZE
 */
@@ -74,6 +69,18 @@ Icterine - #FFF94F
 */
 
 .primary-button {
+
+}
+
+button {
+    font-family: "Roboto", serif;
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+
+    &:hover {
+
+    }
 }
 
 .secondary-button {
@@ -158,6 +165,17 @@ main {
     }
 
     .top-section {
+        .title-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            h1 {
+                text-align: left;
+                white-space: pre;
+            }
+        }
         .text-wrapper {
             display: flex;
             flex-direction: column;
@@ -167,13 +185,20 @@ main {
                 justify-content: center;
 
                 flex: 1;
-
+                h2 {
+                    margin: 20px 0px 0px 50px;
+                }
                 p {
                     margin: 50px;
                 }
             }
             .image-container {
                 flex: 1;
+                display: flex;
+
+                img {
+                    width: 100%;
+                }
             }
         }
 
@@ -192,6 +217,9 @@ main {
                 justify-content: center;
 
                 flex: 1;
+                h2 {
+                    margin: 20px 0px 0px 50px;
+                }
                 p {
                     margin: 50px;
                 }
@@ -217,6 +245,9 @@ main {
                 justify-content: center;
 
                 flex: 1;
+                h2 {
+                    margin: 20px 0px 0px 50px;
+                }
 
                 p {
                     margin: 50px;
